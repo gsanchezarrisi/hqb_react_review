@@ -4,11 +4,11 @@ import PerfilDesarrollador from './components/perfilDesarrollador/PerfilDesarrol
 const App = () => {
   return (
     <div className="App">
-      <PerfilDesarrollador 
+      <PerfilDesarrollador
+        tienePantalla 
         nombre="Gabriel Sánchez" 
         edad={30}
-        tienePantalla={false}
-        />
+      />
     </div>
   );
 }

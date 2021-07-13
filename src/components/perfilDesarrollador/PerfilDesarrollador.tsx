@@ -1,12 +1,12 @@
 type PerfilDesarrolladorProps = {
     nombre: string,
     edad: number,
-    tienePantalla: boolean,
+    tienePantalla?: boolean,
 };
 
 const PerfilDesarrollador = (props: PerfilDesarrolladorProps) => {
     
-    function convertTienePantalla(tienePantalla: boolean): string {
+    function convertTienePantalla(tienePantalla: boolean | undefined): string {
         return (tienePantalla) ? "Si tiene pantalla" : "No tiene pantalla";
     };
 
