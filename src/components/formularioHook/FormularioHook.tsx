@@ -17,7 +17,7 @@ const FormularioHook = () => {
     };
 
     function handlerEstado(event: React.ChangeEvent<HTMLSelectElement>) {
-        setEstado((event.target.value === "true"))
+        setEstado((event.target.value === "true"));
     };
 
     function handlerOnSubmit(event: React.FormEvent<HTMLFormElement>) {
