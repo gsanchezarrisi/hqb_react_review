@@ -1,14 +1,9 @@
 import React from 'react';
-import PerfilDesarrollador from './components/perfilDesarrollador/PerfilDesarrollador';
-
+import FormularioHook from './components/formularioHook/FormularioHook';
 const App = () => {
   return (
     <div className="App">
-      <PerfilDesarrollador
-        tienePantalla 
-        nombre="Gabriel Sánchez" 
-        edad={30}
-      />
+      <FormularioHook/>
     </div>
   );
 }
