@@ -3,7 +3,7 @@ import './FormularioHook.css';
 
 const FormularioHook = () => {
 
-    const [userName, setUserName] = React.useState<string>("gabriel.sanchez");
+    const [userName] = React.useState<string>("gabriel.sanchez");
     const [nombre, setNombre] = React.useState<string>("Gabriel");
     const [apellido, setApellido] = React.useState<string>("Sánchez");
     const [estado, setEstado] = React.useState<boolean>(false);
