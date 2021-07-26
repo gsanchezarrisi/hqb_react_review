@@ -37,7 +37,7 @@ const FormularioListar = () => {
         obtenerListado();
     }, []);
 
-    function obtenerListado(){
+    function obtenerListado() {
         setLoading(true);
         const _listadoTipoDocumento: TipoDocumento[] = [
             { id: 39, areaDocumental: { id: 5, nombre: "Licencias Médicas", estaActivo: true }, codigo: "LIC", padreId: null, nombre: "Licencias Medicas", estaActivo: true, },
@@ -49,10 +49,10 @@ const FormularioListar = () => {
         setLoading(false);
     };
 
-    if(loading){
+    if(loading) {
         return <div>Cargando...</div>;
     }
-    else{
+    else {
         return (
             <ul>
                 {listaTipoDocumento.map((x: TipoDocumento, index: number) => (
@@ -64,8 +64,6 @@ const FormularioListar = () => {
             </ul>
         );
     }
-
-    
 };
 
 export default FormularioListar;
