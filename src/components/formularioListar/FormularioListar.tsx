@@ -5,7 +5,7 @@ type AreaDocumental = {
     id: number,
     nombre: string,
     estaActivo: boolean,
-}
+};
 
 type TipoDocumento = {
     id: number,
@@ -18,7 +18,7 @@ type TipoDocumento = {
 
 type ListItemProps = {
     tipoDocumento: TipoDocumento,
-}
+};
 
 const ListItem = (props: ListItemProps) => {
     return(
@@ -56,7 +56,10 @@ const FormularioListar = () => {
         return (
             <ul>
                 {listaTipoDocumento.map((x: TipoDocumento, index: number) => (
-                    <ListItem tipoDocumento={x}/>
+                    <ListItem
+                    key={`list-item-tipo-documento-${index}`} 
+                    tipoDocumento={x}
+                    />
                 ))}
             </ul>
         );
