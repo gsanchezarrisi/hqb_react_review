@@ -1,9 +1,9 @@
 import React from 'react';
-import FormularioHook from './components/formularioHook/FormularioHook';
+import FormularioListar from './components/formularioListar/FormularioListar';
 const App = () => {
   return (
     <div className="App">
-      <FormularioHook/>
+      <FormularioListar/>
     </div>
   );
 }
