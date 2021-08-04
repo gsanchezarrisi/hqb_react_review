@@ -1,10 +1,11 @@
 import React from 'react';
+import LoginPage from './pages/login/LoginPage';
 
 const App = () => {
   return (
-    <div className="App">
-     nueva APP
-    </div>
+    <React.Fragment>
+      <LoginPage/>
+    </React.Fragment>
   );
 }
 
