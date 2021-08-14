@@ -1,0 +1,15 @@
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+body div #root {
+    width: 100vw;
+    height: 100vh;
+}

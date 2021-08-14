@@ -1,0 +1,66 @@
+.App {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+.sections {
+    display: flex;
+}
+
+.sectionForm {
+    background-color: #006600;
+    width: 100%;
+    min-height: 50vh;
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionForm .title {
+    text-align: center;
+}
+
+.sectionForm .inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionForm .inputs label {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+}
+
+.sectionForm .inputs .flex-center-input {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.sectionForm .inputs input {
+    width: 20vw;
+    height: 5vw;
+    font-size: xx-large;
+    text-align: center;
+    border: 5px solid;
+}
+
+
+
+.sectionClass {
+    background-color: #cc0000;
+    color: black;
+    width: 50%;
+    min-height: 50vh;
+    font-size: xx-large;
+}
+.sectionFunct {
+    background-color: #24248f;
+    color: white;
+    width: 50%;
+    min-height: 50vh;
+    font-size: xx-large;
+}
