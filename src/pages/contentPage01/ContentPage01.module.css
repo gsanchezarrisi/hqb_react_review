@@ -1,0 +1,29 @@
+.root {
+    background-color: #BA364A;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.root p {
+    color: white;
+    font-size: 350%;
+}
+
+.img {
+    max-width: 20em;
+    max-height: 20rem;
+}
+
+.link {
+    margin-top: 100px;
+    text-decoration: none; 
+    color: #20821B; 
+    border: 2px solid #20821B; 
+    padding: 10px;
+    font-size: 350%;
+}

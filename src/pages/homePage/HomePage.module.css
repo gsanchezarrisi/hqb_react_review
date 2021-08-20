@@ -1,0 +1,41 @@
+.root {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    text-align: center;
+    font-size: xx-large;
+    align-content: center;
+}
+
+.redSection {
+    background-color: #BA364A;
+    color: white;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.blueSection {
+    background-color: #20821B;
+    color: white;
+    width: 50%;
+}
+
+.img {
+    max-width: 20em;
+    max-height: 20rem;
+}
+
+.sectionContent{
+    align-items: center;
+    justify-content: center;
+    display: flex; 
+    flex-direction: column; 
+    height: 100%;
+}
+
+.title {
+    writing-mode:vertical-lr;
+    background-color: #507BC7;
+    color: white;
+}
