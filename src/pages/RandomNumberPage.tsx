@@ -7,7 +7,7 @@ const RandomNumberPage = () => {
     const [inputValue, setInputValue] = React.useState<string>("");
     const [loading, setLoading] = React.useState<boolean>(false);
 
-    function comprobateNumber(userInput: string, secretNumber: number): Promise<any> {
+    function ValidateNumber(userInput: string, secretNumber: number): Promise<any> {
         return new Promise((resolve, reject) => {
             setTimeout(() => {
 
@@ -40,7 +40,7 @@ const RandomNumberPage = () => {
         setLoading(true);
 
         const secretNumber = getRandomNumber(1, 11);
-        comprobateNumber(inputValue, secretNumber)
+        ValidateNumber(inputValue, secretNumber)
             .then((response) => {
                 alert(response);
             })
@@ -49,7 +49,7 @@ const RandomNumberPage = () => {
             })
             .finally(() => {
                 setLoading(false);
-            }) 
+            }); 
     };
 
     function handlerInputValueChange(event: React.ChangeEvent<HTMLInputElement>): void {
