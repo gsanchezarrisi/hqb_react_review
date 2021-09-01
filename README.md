@@ -2,15 +2,11 @@
 
 este proyecto se utiliza para capacitaciones internas de HQB sobre react js y tecnologias complementarias
 
-## Semana 08 - Promesas
+## Semana 09 - Peticiones API
 
-* Crear una función que contenga un método con Promise, que dé la oportunidad de adivinar un número generado de forma aleatoria.
-* Crear un formulario que conste de un input de texto y un botón que ejecute la acción de enviar un parámetro a la función.
-* En caso de adivinar el número, debe desplegar una alerta de felicitaciones.
-* En caso de no adivinar debe desplegar una alerta que no adivinó.
-* En caso de ingresar un texto, debe desplegar una alerta con un error “Debe ingresar solo números”
-* El tiempo de respuesta debe estar seteado en 5 segundos.
-
+* Utilizar Tarea 08 (Adivinar número aleatorio) como base.Tarea 08 Sebastián https://github.com/Ratsata/hqb_react_review
+* Obtener el número aleatorio a través de una API de manera Asincrónica.Api generadora de números del 0 al 10 http://hqb-desa-web.hqb.cl/RANDOM/api/numero
+* Mostar mensaje de error en un Label
 ## Desarrollo del Ejercicio
 
 ![](src/assets/img/demo-gif.gif)
