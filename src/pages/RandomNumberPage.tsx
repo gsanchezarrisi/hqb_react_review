@@ -1,46 +1,17 @@
 import React from 'react';
 import RandomNumberForm from "../forms/RandomNumberForm"
-import { getRandomNumber } from '../helpers/helpers';
+import { NumberRequest } from '../requests/NumberRequest';
 
 const RandomNumberPage = () => {
 
     const [inputValue, setInputValue] = React.useState<string>("");
     const [loading, setLoading] = React.useState<boolean>(false);
 
-    function ValidateNumber(userInput: string, secretNumber: number): Promise<any> {
-        return new Promise((resolve, reject) => {
-            setTimeout(() => {
-
-                if(inputValue === '') {
-                    reject('Debes ingresar un valor');
-                }
-
-                if(Number.isNaN(Number(inputValue))) {
-                    reject('No es número');
-                }
-
-                const userInputNumber = Number(userInput);
-
-                if(userInputNumber > 10 || userInputNumber < 1) {
-                    reject('El número debe ser mayor a 1 y menor a 10');
-                }
-
-                if(userInputNumber !== secretNumber) {
-                    reject(`No Acertaste, Vuelve a intentarlo! (Número secreto: ${secretNumber})`);
-                }
-
-                resolve('Felicitaciones Acertaste!');
-
-            }, 5000)
-        });
-    };
-
     function handlerOnSubmit(event: React.FormEvent<HTMLFormElement>): void {
         event.preventDefault();
         setLoading(true);
 
-        const secretNumber = getRandomNumber(1, 11);
-        ValidateNumber(inputValue, secretNumber)
+        NumberRequest(inputValue)
             .then((response) => {
                 alert(response);
             })
